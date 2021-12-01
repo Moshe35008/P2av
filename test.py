@@ -34,10 +34,17 @@ class Watcher:
 
 class MyHandler(FileSystemEventHandler):
 
-    def on_any_event(self, event):
-        print(event)  # Your code here
+    def on_created(self, event):
+        print("added")
 
+    def on_moved(self, event):
+        print("moved")
 
+    def on_deleted(self, event):
+        print("deleted")  # Your code here
+
+    def on_modified(self, event):
+        pass
 
 
 if __name__ == "__main__":
