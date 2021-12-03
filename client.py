@@ -9,7 +9,7 @@ from watchdog.observers import Observer
 CHUNK_SIZE = 1_000_000
 
 
-
+#dada
 class Watcher:
 
     def __init__(self, directory=".", handler=FileSystemEventHandler()):
